@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+:root {
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  /*main BG*/
+  --Very-dark-blue--bg: hsl(217, 54%, 11%);
+  /*card BG*/
+  --Very-dark-blue--card: hsl(216, 50%, 16%);
+  /*line*/
+  --Very-dark-blue: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+  --paragraph-font-size: 18px;
+  --small-weight: 300;
+  --intermediare-weight: 400;
+  --large-weight: 600;
+}
+
+body {
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Very-dark-blue--bg);
+}
+
+.main {
+  margin: 150px 0px 20px 0px;
+  width: 370px;
+  height: 640px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  box-shadow: hsl(215, 70%, 5%) 6px 2px 16px 0px,
+    hsl(215, 37%, 10%) -6px -2px 16px 0px;
+  background-color: var(--Very-dark-blue--card);
+  padding: 30px;
+}
+
+.main__background {
+  width: 310px;
+  height: 310px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.main__background__img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.main__background__icon {
+  position: absolute;
+  transform: translate(-180px, 130px);
+  opacity: 0;
+}
+
+/*Active state*/
+.main__background:hover {
+  transition: 0.5s;
+  background-color: var(--Cyan);
+
+  & .main__background__img {
+    opacity: 0.5;
+  }
+
+  & .main__background__icon {
+    opacity: 1;
+  }
+}
+
+.main__title {
+  cursor: pointer;
+  margin-top: 30px;
+  font-size: 22.5px;
+  color: var(--white);
+  font-weight: var(--large-weight);
+}
+
+/*Active state*/
+.main__title:hover {
+  transition: 0.5s;
+  color: var(--Cyan);
+}
+
+.main__description {
+  margin-top: 20px;
+  color: var(--Soft-blue);
+  opacity: 0.8;
+  font-weight: var(--intermediare-weight);
+  font-size: var(--paragraph-font-size);
+}
+
+.main__infos {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 25px;
+  border-bottom: 2px solid var(--Very-dark-blue);
+  align-items: center;
+}
+
+.main__infos__version,
+.main__infos__time {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.main__infos__version__number {
+  font-size: 18px;
+  color: var(--Cyan);
+  font-weight: var(--intermediare-weight);
+}
+
+.main__infos__time__days {
+  font-size: 18px;
+  color: var(--Soft-blue);
+  opacity: 0.8;
+  margin-bottom: 2px;
+  font-weight: var(--intermediare-weight);
+}
+
+.main__avatar {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.main__avatar__photo {
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--white);
+  border-radius: 100%;
+}
+
+.main__avatar__name {
+  font-size: 18px;
+  color: var(--Soft-blue);
+  opacity: 0.8;
+}
+
+.main__avatar__name--emphasis {
+  color: var(--white);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/*Active state*/
+.main__avatar__name--emphasis:hover {
+  color: var(--Cyan);
+  transition: 0.5s;
+}
+
+/*Media Queries*/
+@media (max-width: 376px) {
+  body {
+    width: 100vw;
+  }
+  .main {
+    width: 320px;
+    height: 520px;
+  }
+  .main__background {
+    width: 260px;
+    height: 260px;
+  }
+  .main__background__img {
+    width: 260px;
+  }
+  .main__background__icon {
+    position: absolute;
+    transform: translate(-155px, 105px);
+    opacity: 0;
+  }
+  .main__title {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  .main__description {
+    margin-top: 15px;
+    font-size: 14.5px;
+  }
+  .main__infos {
+    margin-top: 20px;
+    padding-bottom: 15px;
+  }
+  .main__infos__version__number {
+    font-size: 15px;
+  }
+  .main__infos__time__days {
+    font-size: 15px;
+    margin-top: 2px;
+  }
+  .main__avatar {
+    margin-top: 15px;
+  }
+  .main__avatar__photo {
+    width: 35px;
+    height: 35px;
+  }
+  .main__avatar__name {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 321px) {
+  body {
+    width: 100vw;
+  }
+  .main {
+    width: 280px;
+    height: 490px;
+    padding: 20px;
+  }
+  .main__background {
+    width: 240px;
+    height: 240px;
+  }
+  .main__background__img {
+    width: 240px;
+  }
+  .main__background__icon {
+    position: absolute;
+    transform: translate(-145px, 100px);
+    opacity: 0;
+  }
+}

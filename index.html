@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin-bottom: 150px;
+        color: var(--white);
+      }
+      .attribution a {
+        color: var(--Cyan);
+      }
+    </style>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="main__background">
+        <img
+          src="/images/image-equilibrium.jpg"
+          alt="Equilibrium NFT image"
+          class="main__background__img"
+        />
+        <img
+          src="/images/icon-view.svg"
+          alt="view eye icon in active state"
+          class="main__background__icon"
+        />
+      </div>
+
+      <h1 class="main__title">Equilibrium #3429</h1>
+      <p class="main__description">
+        Our Equilibrium collection promotes balance and calm.
+      </p>
+
+      <div class="main__infos">
+        <div class="main__infos__version">
+          <img src="/images/icon-ethereum.svg" alt="icon ethereum" />
+          <small class="main__infos__version__number">0.041 ETH</small>
+        </div>
+        <div class="main__infos__time">
+          <img src="/images/icon-clock.svg" alt="icon clock" />
+          <small class="main__infos__time__days">3 days left</small>
+        </div>
+      </div>
+
+      <div class="main__avatar">
+        <img
+          src="/images/image-avatar.png"
+          alt="Card avatar image"
+          class="main__avatar__photo"
+        />
+        <p class="main__avatar__name">
+          Creation of
+          <a
+            href="#"
+            class="main__avatar__name--emphasis"
+            aria-label="click here to go to the Jules Wyvern profile page"
+            >Jules Wyvern</a
+          >
+        </p>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        href="https://www.frontendmentor.io/profile/maria202costa"
+        target="_blank"
+        >@maria202costa</a
+      >.
+    </div>
+  </body>
+</html>
