@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL]()
-- Live Site URL: [Live Site URL]()
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/a-responsive-nft-main-component-using-html-and-css-js0XS-tMZC)
+- Live Site URL: [Live Site URL](https://nft-main-component.vercel.app/)
 
 ## My process
 
